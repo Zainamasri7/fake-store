@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="Logo.png" alt="Logo" class="logo">
+            <nav class="category-nav">
+                <button onclick="fetchProducts()">All</button>
+                <button onclick="fetchCategory('electronics')">Electronics</button>
+                <button onclick="fetchCategory('jewelery')">Jewelry</button>
+                <button onclick="fetchCategory(`men's clothing`)" >Men's Clothing</button>
+                <button onclick="fetchCategory(`women's clothing`)">Women's Clothing</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <div id="loader" class="loader"></div>
+        <div class="products-container" id="products"></div>
+        
+        <div class="pagination" id="pagination"></div>
+    </main>
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
+
